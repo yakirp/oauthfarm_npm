@@ -1,4 +1,4 @@
-### OAuthFarm
+# OAuthFarm
 OAuthFarm is a cloud service for developers that makes it easy to manage OAuth integrations and keys lifecycle while ensuring security and robust deliverability.
 
 ## Get keys
