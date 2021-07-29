@@ -31,9 +31,9 @@ const newServices = {
         authorization_endpoint
     };
 
-oauthfarm.addService(newServices).then(function (newService) {
+oauthfarm.addService(newServices).then(function (connectedService) {
     //Use this link to interact with the resource owner and get the authorization to access the protected resource.
-    console.log(newService.subscribe_link)
+    console.log(connectedService.subscribe_link)
 })
 ```
 
