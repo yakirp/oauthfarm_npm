@@ -1,6 +1,6 @@
 
 ## Get keys
-You will need the api key and to authenticate your app. Get your keys [here](https://oauthfarm.com).
+You will need the api key to authenticate your app. Get your keys [here](https://oauthfarm.com).
 
 ### Install the library:
 ```bash
