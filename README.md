@@ -9,7 +9,7 @@ You will need the api key to authenticate your app. Get your keys [here](https:/
 npm i oauthfarm
 ```
 
-### Connect OAuth service:
+### Connect a new OAuth service:
 
 ```javascript
 const oauthfarm = require("oauthfarm")('<api_key>');
