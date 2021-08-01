@@ -36,6 +36,9 @@ const newServices = {
 oauthfarm.addService(newServices).then(function (connectedService) {
     //Use this link to interact with the resource owner and get the authorization to access the protected resource.
     console.log(connectedService.subscribe_link)
+    /*
+    * Example: https://oauthfarm.com/subscribe/1bc14b0c-e5f6-4824-976b-c28334fe797a
+    */
 })
 ```
 
