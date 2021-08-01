@@ -33,13 +33,14 @@ const getProject = async () => {
 const addService = async (service) => {
 
     const data = JSON.stringify(service);
+
     const config = {
         method: 'post',
         headers: {
             'Content-Type': 'application/json'
         },
         url: `${_api.host}/api/service?api_key=${_api.api_key}`,
-        data: {...data}
+        data: data
     };
     const p = new Promise((resolve, reject) => {
 
