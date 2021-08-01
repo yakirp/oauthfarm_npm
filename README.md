@@ -41,5 +41,20 @@ oauthfarm.addService(newServices).then(function (connectedService) {
     */
 })
 ```
+### Subscribe you users to the new service:
+
+You can subscribe your users by just sending them the link from `addService`
+After a successful subscribe, you will receive the new `account_id` and other parametersyou sent with the subscribe link.
+
+### Receive account OAuth credentials:
+
+```javascript
+oauthfarm.getAccount("<account_id>").then(function (account_credentials) {
+    console.log(account_credentials)
+})
+```
+
+
+
 
 
