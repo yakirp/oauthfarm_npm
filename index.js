@@ -16,6 +16,7 @@ function Oauthfarm(api_key, config = {}) {
 
     this.getProject = getProject;
     this.addService = addService;
+    this.getAccount =getAccount;
 }
 
 const getProject = async () => {
@@ -28,6 +29,36 @@ const getProject = async () => {
     const project = await axios(config)
 
     return project.data
+}
+const getAccount = async (account_id) => {
+    const config = {
+        method: 'get',
+        url: `${_api.host}/accounts/${account_id}?api_key=${_api.api_key}`,
+    };
+
+    const p = new Promise((resolve, reject) => {
+
+        const response = axios(config).catch(function (error) {
+            let msg = "";
+            if (error.response) {
+                msg = error.response.data
+            } else if (error.request) {
+                msg = error.response
+            } else {
+                msg = error.message;
+            }
+            reject(msg)
+
+        }).then(function (response) {
+            resolve(response.data.data)
+        })
+
+
+    });
+
+    await p
+    return p
+
 }
 
 const addService = async (service) => {
